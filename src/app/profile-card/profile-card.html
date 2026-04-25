@@ -1,0 +1,19 @@
+<mat-card>
+    <header>
+        <mat-card-header>
+            <mat-card-title>{{ child.name }}</mat-card-title>
+            <mat-card-subtitle>{{ child.role }}</mat-card-subtitle>
+            @if(child.isOnline){
+            <mat-card-subtitle>🟢 Online</mat-card-subtitle>
+            } @else {
+            <mat-card-subtitle>🔴 Offline</mat-card-subtitle>
+              }
+            <mat-card-actions>
+                <button mat-Button (click)="change1()">change</button>
+            </mat-card-actions>
+                
+
+            
+        </mat-card-header>
+    </header>
+</mat-card>
